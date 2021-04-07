@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cuser/Justin/inClass_Cplusplus/DeckDeal/src/DeckOfCards.h
+iostream
+-
+string
+-
+vector
+-
+algorithm
+-
+
+/home/cuser/Justin/inClass_Cplusplus/DeckDeal/src/Player.h
+vector
+-
+
+/home/cuser/Justin/inClass_Cplusplus/DeckDeal/src/main.cpp
+iostream
+-
+string
+-
+vector
+-
+algorithm
+-
+random
+-
+sstream
+-
+DeckOfCards.h
+/home/cuser/Justin/inClass_Cplusplus/DeckDeal/src/DeckOfCards.h
+Player.h
+/home/cuser/Justin/inClass_Cplusplus/DeckDeal/src/Player.h
+
