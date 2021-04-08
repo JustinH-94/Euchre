@@ -32,7 +32,7 @@ class Player : PlayerHand, Dealer{
 
         void showCards(std::vector<DeckOfCards::Card> my_Hand){
             for(DeckOfCards::Card c : my_Hand){
-                std::cout << c.face<< " " << c.suit << std::endl;
+                std::cout << c.face<< " " << c.suit << std::endl <<std::endl;
             }
         }
 
