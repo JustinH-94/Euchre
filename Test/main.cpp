@@ -18,7 +18,10 @@ TEST(PlayCard, DeckOfCards::Card c){
     DeckOfCards::Card secondBest;
     ASSERT_EQ(c, p.PlayCard(c,secondBest));
 }
-
+TEST(Trump, "Diamonds"){
+    Player p = Player();
+    ASSERT_EQ("Diamonds", p.SetTrumpCard("Diamonds"));
+}
 int main(int argc, char ** argv){
     testing::InitGoogleTest(&argc, argv);
     return RUN_ALL_TESTS();
