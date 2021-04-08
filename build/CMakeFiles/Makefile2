@@ -50,10 +50,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuser/Justin/_Euchre/Euchre
+CMAKE_SOURCE_DIR = /home/cuser/Justin/Euchre
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuser/Justin/_Euchre/Euchre/build
+CMAKE_BINARY_DIR = /home/cuser/Justin/Euchre/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/gtest.dir
@@ -62,7 +62,7 @@ CMAKE_BINARY_DIR = /home/cuser/Justin/_Euchre/Euchre/build
 CMakeFiles/gtest.dir/all:
 	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/depend
 	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cuser/Justin/_Euchre/Euchre/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cuser/Justin/Euchre/build/CMakeFiles  1 2
 	@echo "Built target gtest"
 .PHONY : CMakeFiles/gtest.dir/all
 
@@ -72,9 +72,9 @@ all: CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuser/Justin/_Euchre/Euchre/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuser/Justin/Euchre/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuser/Justin/_Euchre/Euchre/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuser/Justin/Euchre/build/CMakeFiles 0
 .PHONY : CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -97,7 +97,7 @@ clean: CMakeFiles/gtest.dir/clean
 CMakeFiles/inclass.dir/all:
 	$(MAKE) -f CMakeFiles/inclass.dir/build.make CMakeFiles/inclass.dir/depend
 	$(MAKE) -f CMakeFiles/inclass.dir/build.make CMakeFiles/inclass.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cuser/Justin/_Euchre/Euchre/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cuser/Justin/Euchre/build/CMakeFiles  3
 	@echo "Built target inclass"
 .PHONY : CMakeFiles/inclass.dir/all
 
@@ -107,9 +107,9 @@ all: CMakeFiles/inclass.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/inclass.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuser/Justin/_Euchre/Euchre/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuser/Justin/Euchre/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/inclass.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuser/Justin/_Euchre/Euchre/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuser/Justin/Euchre/build/CMakeFiles 0
 .PHONY : CMakeFiles/inclass.dir/rule
 
 # Convenience name for target.
@@ -132,7 +132,7 @@ clean: CMakeFiles/inclass.dir/clean
 CMakeFiles/inclass-test.dir/all: CMakeFiles/gtest.dir/all
 	$(MAKE) -f CMakeFiles/inclass-test.dir/build.make CMakeFiles/inclass-test.dir/depend
 	$(MAKE) -f CMakeFiles/inclass-test.dir/build.make CMakeFiles/inclass-test.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cuser/Justin/_Euchre/Euchre/build/CMakeFiles  2 3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cuser/Justin/Euchre/build/CMakeFiles  4 5
 	@echo "Built target inclass-test"
 .PHONY : CMakeFiles/inclass-test.dir/all
 
@@ -142,9 +142,9 @@ all: CMakeFiles/inclass-test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/inclass-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuser/Justin/_Euchre/Euchre/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuser/Justin/Euchre/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/inclass-test.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuser/Justin/_Euchre/Euchre/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuser/Justin/Euchre/build/CMakeFiles 0
 .PHONY : CMakeFiles/inclass-test.dir/rule
 
 # Convenience name for target.

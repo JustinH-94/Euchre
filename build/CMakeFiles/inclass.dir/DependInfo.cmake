@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/cuser/Justin/_Euchre/Euchre/src/main.cpp" "/home/cuser/Justin/_Euchre/Euchre/build/CMakeFiles/inclass.dir/src/main.cpp.o"
+  "/home/cuser/Justin/Euchre/src/main.cpp" "/home/cuser/Justin/Euchre/build/CMakeFiles/inclass.dir/src/main.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -15,8 +15,8 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "../."
-  "../googletest/googletest/src/gtest-all.cc"
-  "../googletest/googletest/src/gtest_main.cc"
+  "../googletest/googletest"
+  "../googletest/googletest/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

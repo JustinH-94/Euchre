@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuser/Justin/_Euchre/Euchre
+CMAKE_SOURCE_DIR = /home/cuser/Justin/Euchre
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuser/Justin/_Euchre/Euchre/build
+CMAKE_BINARY_DIR = /home/cuser/Justin/Euchre/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuser/Justin/_Euchre/Euchre/build/CMakeFiles /home/cuser/Justin/_Euchre/Euchre/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuser/Justin/Euchre/build/CMakeFiles /home/cuser/Justin/Euchre/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuser/Justin/_Euchre/Euchre/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuser/Justin/Euchre/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -164,6 +164,54 @@ Test/main.cpp.s:
 	$(MAKE) -f CMakeFiles/inclass-test.dir/build.make CMakeFiles/inclass-test.dir/Test/main.cpp.s
 .PHONY : Test/main.cpp.s
 
+googletest/googletest/src/gtest-all.o: googletest/googletest/src/gtest-all.cc.o
+.PHONY : googletest/googletest/src/gtest-all.o
+
+# target to build an object file
+googletest/googletest/src/gtest-all.cc.o:
+	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/googletest/googletest/src/gtest-all.cc.o
+.PHONY : googletest/googletest/src/gtest-all.cc.o
+
+googletest/googletest/src/gtest-all.i: googletest/googletest/src/gtest-all.cc.i
+.PHONY : googletest/googletest/src/gtest-all.i
+
+# target to preprocess a source file
+googletest/googletest/src/gtest-all.cc.i:
+	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/googletest/googletest/src/gtest-all.cc.i
+.PHONY : googletest/googletest/src/gtest-all.cc.i
+
+googletest/googletest/src/gtest-all.s: googletest/googletest/src/gtest-all.cc.s
+.PHONY : googletest/googletest/src/gtest-all.s
+
+# target to generate assembly for a file
+googletest/googletest/src/gtest-all.cc.s:
+	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/googletest/googletest/src/gtest-all.cc.s
+.PHONY : googletest/googletest/src/gtest-all.cc.s
+
+googletest/googletest/src/gtest_main.o: googletest/googletest/src/gtest_main.cc.o
+.PHONY : googletest/googletest/src/gtest_main.o
+
+# target to build an object file
+googletest/googletest/src/gtest_main.cc.o:
+	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/googletest/googletest/src/gtest_main.cc.o
+.PHONY : googletest/googletest/src/gtest_main.cc.o
+
+googletest/googletest/src/gtest_main.i: googletest/googletest/src/gtest_main.cc.i
+.PHONY : googletest/googletest/src/gtest_main.i
+
+# target to preprocess a source file
+googletest/googletest/src/gtest_main.cc.i:
+	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/googletest/googletest/src/gtest_main.cc.i
+.PHONY : googletest/googletest/src/gtest_main.cc.i
+
+googletest/googletest/src/gtest_main.s: googletest/googletest/src/gtest_main.cc.s
+.PHONY : googletest/googletest/src/gtest_main.s
+
+# target to generate assembly for a file
+googletest/googletest/src/gtest_main.cc.s:
+	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/googletest/googletest/src/gtest_main.cc.s
+.PHONY : googletest/googletest/src/gtest_main.cc.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -205,6 +253,12 @@ help:
 	@echo "... Test/main.o"
 	@echo "... Test/main.i"
 	@echo "... Test/main.s"
+	@echo "... googletest/googletest/src/gtest-all.o"
+	@echo "... googletest/googletest/src/gtest-all.i"
+	@echo "... googletest/googletest/src/gtest-all.s"
+	@echo "... googletest/googletest/src/gtest_main.o"
+	@echo "... googletest/googletest/src/gtest_main.i"
+	@echo "... googletest/googletest/src/gtest_main.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

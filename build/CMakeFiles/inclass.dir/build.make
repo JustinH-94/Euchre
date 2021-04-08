@@ -38,10 +38,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuser/Justin/_Euchre/Euchre
+CMAKE_SOURCE_DIR = /home/cuser/Justin/Euchre
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuser/Justin/_Euchre/Euchre/build
+CMAKE_BINARY_DIR = /home/cuser/Justin/Euchre/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/inclass.dir/depend.make
@@ -54,17 +54,17 @@ include CMakeFiles/inclass.dir/flags.make
 
 CMakeFiles/inclass.dir/src/main.cpp.o: CMakeFiles/inclass.dir/flags.make
 CMakeFiles/inclass.dir/src/main.cpp.o: ../src/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/cuser/Justin/_Euchre/Euchre/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/cuser/Justin/Euchre/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/inclass.dir/src/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/inclass.dir/src/main.cpp.o -c /home/cuser/Justin/_Euchre/Euchre/src/main.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/inclass.dir/src/main.cpp.o -c /home/cuser/Justin/Euchre/src/main.cpp
 
 CMakeFiles/inclass.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/inclass.dir/src/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/cuser/Justin/_Euchre/Euchre/src/main.cpp > CMakeFiles/inclass.dir/src/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/cuser/Justin/Euchre/src/main.cpp > CMakeFiles/inclass.dir/src/main.cpp.i
 
 CMakeFiles/inclass.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/inclass.dir/src/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/cuser/Justin/_Euchre/Euchre/src/main.cpp -o CMakeFiles/inclass.dir/src/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/cuser/Justin/Euchre/src/main.cpp -o CMakeFiles/inclass.dir/src/main.cpp.s
 
 CMakeFiles/inclass.dir/src/main.cpp.o.requires:
 .PHONY : CMakeFiles/inclass.dir/src/main.cpp.o.requires
@@ -100,6 +100,6 @@ CMakeFiles/inclass.dir/clean:
 .PHONY : CMakeFiles/inclass.dir/clean
 
 CMakeFiles/inclass.dir/depend:
-	cd /home/cuser/Justin/_Euchre/Euchre/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuser/Justin/_Euchre/Euchre /home/cuser/Justin/_Euchre/Euchre /home/cuser/Justin/_Euchre/Euchre/build /home/cuser/Justin/_Euchre/Euchre/build /home/cuser/Justin/_Euchre/Euchre/build/CMakeFiles/inclass.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cuser/Justin/Euchre/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cuser/Justin/Euchre /home/cuser/Justin/Euchre /home/cuser/Justin/Euchre/build /home/cuser/Justin/Euchre/build /home/cuser/Justin/Euchre/build/CMakeFiles/inclass.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/inclass.dir/depend
 

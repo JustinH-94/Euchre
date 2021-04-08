@@ -1,1 +1,1 @@
-/usr/bin/c++       CMakeFiles/inclass.dir/src/main.cpp.o  -o inclass -rdynamic 
+/usr/bin/c++    -std=c++11 -Wall -Wextra -Werror -pthread    CMakeFiles/inclass.dir/src/main.cpp.o  -o inclass -rdynamic 
