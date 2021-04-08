@@ -42,10 +42,10 @@ EQUALS = =
 CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cuser/Justin/inClass_Cplusplus/DeckDeal
+CMAKE_SOURCE_DIR = /home/cuser/Justin/_Euchre/Euchre
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cuser/Justin/inClass_Cplusplus/DeckDeal/build
+CMAKE_BINARY_DIR = /home/cuser/Justin/_Euchre/Euchre/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuser/Justin/inClass_Cplusplus/DeckDeal/build/CMakeFiles /home/cuser/Justin/inClass_Cplusplus/DeckDeal/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuser/Justin/_Euchre/Euchre/build/CMakeFiles /home/cuser/Justin/_Euchre/Euchre/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuser/Justin/inClass_Cplusplus/DeckDeal/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cuser/Justin/_Euchre/Euchre/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -102,6 +102,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) -f CMakeFiles/gtest.dir/build.make CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
 # Target rules for targets named inclass
 
 # Build rule for target.
@@ -114,20 +127,69 @@ inclass/fast:
 	$(MAKE) -f CMakeFiles/inclass.dir/build.make CMakeFiles/inclass.dir/build
 .PHONY : inclass/fast
 
+#=============================================================================
+# Target rules for targets named inclass-test
+
+# Build rule for target.
+inclass-test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 inclass-test
+.PHONY : inclass-test
+
+# fast build rule for target.
+inclass-test/fast:
+	$(MAKE) -f CMakeFiles/inclass-test.dir/build.make CMakeFiles/inclass-test.dir/build
+.PHONY : inclass-test/fast
+
+Test/main.o: Test/main.cpp.o
+.PHONY : Test/main.o
+
 # target to build an object file
-src/main.o:
-	$(MAKE) -f CMakeFiles/inclass.dir/build.make CMakeFiles/inclass.dir/src/main.o
-.PHONY : src/main.o
+Test/main.cpp.o:
+	$(MAKE) -f CMakeFiles/inclass-test.dir/build.make CMakeFiles/inclass-test.dir/Test/main.cpp.o
+.PHONY : Test/main.cpp.o
+
+Test/main.i: Test/main.cpp.i
+.PHONY : Test/main.i
 
 # target to preprocess a source file
-src/main.i:
-	$(MAKE) -f CMakeFiles/inclass.dir/build.make CMakeFiles/inclass.dir/src/main.i
-.PHONY : src/main.i
+Test/main.cpp.i:
+	$(MAKE) -f CMakeFiles/inclass-test.dir/build.make CMakeFiles/inclass-test.dir/Test/main.cpp.i
+.PHONY : Test/main.cpp.i
+
+Test/main.s: Test/main.cpp.s
+.PHONY : Test/main.s
 
 # target to generate assembly for a file
-src/main.s:
-	$(MAKE) -f CMakeFiles/inclass.dir/build.make CMakeFiles/inclass.dir/src/main.s
+Test/main.cpp.s:
+	$(MAKE) -f CMakeFiles/inclass-test.dir/build.make CMakeFiles/inclass-test.dir/Test/main.cpp.s
+.PHONY : Test/main.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) -f CMakeFiles/inclass.dir/build.make CMakeFiles/inclass.dir/src/main.cpp.o
+	$(MAKE) -f CMakeFiles/inclass-test.dir/build.make CMakeFiles/inclass-test.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) -f CMakeFiles/inclass.dir/build.make CMakeFiles/inclass.dir/src/main.cpp.i
+	$(MAKE) -f CMakeFiles/inclass-test.dir/build.make CMakeFiles/inclass-test.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
 .PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) -f CMakeFiles/inclass.dir/build.make CMakeFiles/inclass.dir/src/main.cpp.s
+	$(MAKE) -f CMakeFiles/inclass-test.dir/build.make CMakeFiles/inclass-test.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -136,8 +198,13 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... gtest"
 	@echo "... inclass"
+	@echo "... inclass-test"
 	@echo "... rebuild_cache"
+	@echo "... Test/main.o"
+	@echo "... Test/main.i"
+	@echo "... Test/main.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

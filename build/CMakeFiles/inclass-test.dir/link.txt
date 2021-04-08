@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/inclass-test.dir/Test/main.cpp.o CMakeFiles/inclass-test.dir/src/main.cpp.o  -o inclass-test -rdynamic libgtest.a -lpthread 

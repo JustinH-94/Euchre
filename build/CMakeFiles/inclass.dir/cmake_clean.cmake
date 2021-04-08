@@ -1,5 +1,5 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/inclass.dir/src/main.o"
+  "CMakeFiles/inclass.dir/src/main.cpp.o"
   "inclass.pdb"
   "inclass"
 )
